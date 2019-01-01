@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+              
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    
+    <title>Survey Form</title>
+</head>
+<body>
+<main class="container">
+    <header class="center">
+        <h1 id="title">Survey Form</h1>
+        <p class="flow-text" id="description">A very interesting set of questions...</p>                
+        <div class="switch">
+            <label>
+                Light
+                <input type="checkbox" id="darkMode" onchange="toggleTheme()" checked>
+                <span class="lever"></span>
+                Dark
+            </label>
+        </div>
+    </header>
+
+    <form id="survey-form" action=""> <!--class="container"-->
+        <fieldset>
+            <legend>Registration</legend>
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" name="" placeholder="Bob">
+    
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" name="" placeholder="bobby@coldmail.com">
+    
+            <label for="number" id="number-label">Age</label>
+            <p class="range-field">
+                <input type="number" name="number" min="13" max="80" />
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Gender</legend>
+            <p><label><input name="gender" type="radio" /><span>Male</span></label></p>
+            <p><label><input name="gender" type="radio" /><span>Female</span></label></p>
+            <p><label><input name="gender" type="radio" /><span>Other</span></label></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Things You Like</legend>
+            <p><label><input type="checkbox" class="filled-in" checked="checked" /><span>Anime</span></label></p>
+            <p><label><input type="checkbox" class="filled-in" checked="checked" /><span>Games</span></label></p>
+            <p><label><input type="checkbox" class="filled-in" checked="checked" checked/><span>Filling Out Pointless Surveys</span></label></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Finally</legend>
+            <select name="color-select" class="browser-default">
+                <option value="" disabled selected>Choose a Preferred Colour</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+            </select>
+        </fieldset>
+        <hr>
+        <div id="comment-box">
+            <label for="comments">Additional Comments</label><br>
+            <textarea class="flow-text" name="comments" cols="30" rows="10" placeholder="This survey was awful.. and here's why."></textarea>
+        </div>
+        <br>
+
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+</main>
+</body>
+</html>

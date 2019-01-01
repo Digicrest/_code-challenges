@@ -1,0 +1,51 @@
+body {
+    background-image: url("https://i.imgur.com/Eq36lSO.png");
+}
+
+main {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #666;
+    color: #36ADB3;
+}
+
+main:hover {
+    box-shadow: 6px 6px 15px #888;
+    transform:scale(1.005) 
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    font-size: 1.5em;
+}
+
+button {
+   width: 100%;
+}
+
+#comment-box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+textarea {
+    height: 10vh;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.light {
+    background-color: #FFF;
+}
+
+.dark {
+    background-color: #313131;
+}
+.dark input {
+    color: white;
+}
+.dark textarea {
+    color: white;
+}
